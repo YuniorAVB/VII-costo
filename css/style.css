@@ -1,0 +1,67 @@
+:root {
+  --primary: #1e1e2f;
+  --secondary: #3ca472;
+
+  --letter-color: white;
+
+  --font-family: "Poppins", sans-serif;
+  --danger: #dc3545;
+  --success: #3ca472;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --dark-light: #27293d;
+}
+
+.danger{
+  background-color: var(--danger) !important;
+}
+
+.success{
+  background-color: var(--success) !important;
+}
+
+.warning{
+  background-color: var(--warning) !important;
+}
+
+.info{
+  background-color: var(--info) !important;
+}
+
+.primary{
+  background-color: var(--primary) !important;
+}
+
+.dark-light{
+  background-color: var(--dark-light) !important;
+}
+
+.secondary{
+  background-color: var(--secondary) !important;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.wraper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: linear-gradient(#1e1e2f, #1e1e24);
+  min-height: calc(100vh - 4px);
+  font-family: var(--font-family);
+  border-top: 2px solid var(--secondary);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.main {
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+}

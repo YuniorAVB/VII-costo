@@ -1,0 +1,23 @@
+@import "./style.css";
+.modal-chart {
+  position: fixed;
+  background: var(--primary);
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  transition: all 200ms ease;
+}
+
+.cerrar-modal {
+  position: absolute;
+  left: 0;
+  margin: 50px;
+}
+
+.acitive-modal {
+  left: -150vw;
+  transition: all 500ms ease;
+}

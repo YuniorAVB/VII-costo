@@ -1,0 +1,44 @@
+@import 'style.css';
+
+.btn{
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid var(--primary);
+    transition: all ease .2s;
+}
+
+
+
+.btn-danger{
+    background-color: var(--danger);
+    color: white;
+    border: none;
+}
+
+
+.btn-success{
+    background-color: var(--success);
+    color: white;
+    border: none;
+}
+
+.btn-warning{
+    background-color: var(--warning);
+    color: white;
+    border: none;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+.btn-info{
+    background-color: var(--info);
+    color: white;
+    border: none;
+}

@@ -1,0 +1,48 @@
+@import './style.css';
+
+.notification{
+    background: #3ca472 ;
+    border-radius: 5px;
+    height: 80px;
+    width: 400px;
+    position: fixed;
+    z-index: 999;
+    margin: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    color: white;
+    font-size: .9em;
+}
+
+.notification-cerrar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: all ease .2s;
+}
+.notification-cerrar:hover{
+    color: var(--danger);
+    font-size: 1.5em;
+}
+
+.rigth{
+    right: 0;
+}
+
+.left{
+    left: 0;
+}
+
+.bottom{
+    bottom: 0;
+}
+
+.top{
+    top: 0;
+}

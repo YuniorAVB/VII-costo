@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SISTEMA COSTOS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/notification.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/padding.css" />
+    <link rel="stylesheet" href="./css/margin.css" />
+    <link rel="stylesheet" href="./css/text.css" />
+    <link rel="stylesheet" href="./css/display.css">
+    <link rel="stylesheet" href="./css/chart.css">
+    <script src="./js/fontawesome.all.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wraper" id="app">
+      <div class="notification rigth danger" v-show="notifacion">
+        <div @click="notifacion=!notifacion" class="notification-cerrar">
+          <i class="fas fa-times"></i>
+        </div>
+
+        <span class="notification-message">MENSAJE</span>
+      </div>
+
+      <aside class="sidebar" :class="{'sidebar-active':sidebar}">
+        <div class="logo">
+          <i class="fab fa-contao logo-icon"></i>
+          <span class="logo-name" v-show="!sidebar">DASHBOARD</span>
+        </div>
+        <div class="sidebar-container">
+          <div class="perfil" v-show="!sidebar">
+            <img class="perfil-img" src="./img/perfil.webp" alt="" />
+
+            <span class="perfil-name">YUNIOR</span>
+          </div>
+
+          <ul class="navbar-vertical">
+            <li class="sidebar-item">
+              <router-link to="/costosdirectos">
+                <i class="fas fa-money-check-alt"></i>
+                <span v-show="!sidebar">Costos Directos</span>
+              </router-link>
+            </li>
+            <li class="sidebar-item">
+              <router-link to="/costosindirectos">
+                <i class="fas fa-money-check"></i>
+                <span v-show="!sidebar">Costos Indirectos</span>
+              </router-link>
+            </li>
+            <li class="sidebar-item">
+              <router-link to="/costosfijos">
+                <i class="fas fa-funnel-dollar"></i>
+                <span v-show="!sidebar">Costos Fijos</span>
+              </router-link>
+            </li>
+            <li class="sidebar-item">
+              <router-link to="/costosproduccion">
+                <i class="fas fa-people-carry"></i>
+                <span v-show="!sidebar">Costos Produccion</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="container">
+        <header class="header">
+          <nav class="nav">
+            <ul class="navbar">
+              <li class="navbar-item" @click="sidebar=!sidebar">
+                <i class="fas fa-bars navbar-icon-menu"></i>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="main"  role="main">
+          <router-view></router-view>
+        </main>
+      </div>
+    </div>
+
+    <script src="./js/components/CostosDirectos.js"></script>
+    <script src="./js/components/CostosIndirectos.js"></script>
+    <script src="./js/components/CostosFijos.js"></script>
+    <script src="./js/components/CostosProduccion.js"></script>
+    <script src="./js/Chart.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/vue-router.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

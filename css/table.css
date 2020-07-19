@@ -1,0 +1,86 @@
+@import "./style.css";
+
+.table {
+  width: 100%;
+  list-style: none;
+  border-style: none;
+  text-align: center;
+  border: 0;
+  border-collapse: 0;
+  border-spacing: 0;
+  border: 1px solid white;
+}
+
+table th,
+td,
+tr {
+  padding: 10px;
+}
+table {
+  display:table;
+  width:100%;
+  table-layout:fixed;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.table-danger {
+  width: 100%;
+  list-style: none;
+  border-style: none;
+  text-align: center;
+  border: 0;
+  border-collapse: 0;
+  border-spacing: 0;
+  border: 1px solid var(--danger);
+}
+.table-danger thead {
+  background-color: var(--danger);
+}
+
+.table-warning {
+  width: 100%;
+  list-style: none;
+  border-style: none;
+  text-align: center;
+  border: 0;
+  border-collapse: 0;
+  border-spacing: 0;
+  border: 1px solid var(--warning);
+}
+.table-warning thead {
+  background-color: var(--warning);
+}
+
+.table-success {
+  width: 100%;
+  list-style: none;
+  border-style: none;
+  text-align: center;
+  border: 0;
+  border-collapse: 0;
+  border-spacing: 0;
+  border: 1px solid var(--success);
+}
+.table-success thead {
+  background-color: var(--success);
+}
+
+.table-info {
+  width: 100%;
+  list-style: none;
+  border-style: none;
+  text-align: center;
+  border: 0;
+  border-collapse: 0;
+  border-spacing: 0;
+  border: 1px solid var(--info);
+}
+.table-info thead {
+  background-color: var(--info);
+}
